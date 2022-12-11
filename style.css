@@ -1,0 +1,460 @@
+body{
+	margin: 0;
+	padding: 0;
+/*	box-sizing: border-box;*/
+}
+ul{
+	list-style: none;
+	text-decoration: none;
+}
+li{
+	display: inline;
+}
+/* Topbar Css Starts */
+
+.dropdown-menu {
+	display: block;
+	visibility: hidden;
+	opacity:0;
+	transform: translateY(50px);
+	transition:.5s ease all;
+}
+.dropdown-menu.show {
+	display: block;
+	visibility: visible;
+	opacity:1;
+	transform: translateY(0px);
+	transition:.5s ease-out;
+}
+
+.fa-brands{
+    color: #ccc;
+    padding-right: 15px;
+}
+.btn-1{
+	width: 105px;
+	padding: 8px 8px 8px 22px;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 8px 5px;
+	background-color: #fab700;
+	color:#ffffff;
+	font-size: 12px;
+	font-family: "Robot", sans-serif;
+	cursor: pointer;
+}
+.btn-2{
+	width: 105px;
+	padding: 8px 8px 8px 22px;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 8px 5px;
+	background-color: #f9f9ff;
+	color:black;
+	font-size: 12px;
+	font-family: "Robot", sans-serif;
+}
+.topbar-icons{
+	margin-top: 8px;	
+}
+
+.line{
+	height: 1px;
+	width: 100%;
+	opacity:.3;
+	background-color:black;
+}
+
+/* Topbar Css Ends */
+
+/* Navbar Css Starts */
+.navbar{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.navbar a, .btnElm{
+	font-size: 14px;
+	font-family: "Poppins", sans-serif;
+	color: #222222;
+	font-weight: 500;
+}
+.navbar a:hover{
+	color:#fab700;
+}
+/* Navbar Css Ends  */
+
+/* Home Banner Css Starts  */
+img.img-fluid {
+    width: 100%;
+    height:700px;
+}
+.home{
+	position: relative;
+	align-items: center;
+}
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-content h1{
+	color: #ffffff;
+	font-size:60px;
+	font-family: "Oswald", sans-serif;
+	margin: 0px 0px 40px;
+}
+.home-content h1 span{
+	background-color:#fab700;
+    color: black;
+    border-radius: 9px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.home-content p{
+	font-size: 14px;
+	font-family:"Roboto", sans-serif;
+	margin-bottom: 20px;
+	color:#ffffff;
+}
+.btn.btn-dark{
+	color: #fab700;
+	font-size:14px;
+	font-family: "Roboto", sans-serif;
+	padding: 15px 50px;
+	background-color: #222222;
+	margin: 40px 0px 0px;
+}
+.btn.btn-dark:hover{
+	color:  #222222;
+	background-color: #fab700;
+}
+/* Home Banner Css Ends */
+
+/* Services Section Css  */
+.services{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.service-content h1, .builder-content h1, .team-content h1, .fetaure-content h1{
+	font-size:36px;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 12px;
+	font-weight: 600;
+	color: #222222;
+}
+.service-content p, .builder-content p, .team-content p, .counter-content p, .fetaure-content p, .feature-box p{
+	font-size: 14px;
+	font-family:"Roboto", sans-serif;
+	color: #777777;
+}
+
+.service-item{
+	height:327px;
+	width: 360px;
+	margin: 0px 0px 30px;
+	padding: 45px 55px ;
+}
+.service-item img{
+	margin-bottom:23px;
+}
+.service-item h2{
+	font-size: 20px;
+	font-family: "Oswald",sans-serif;
+	color: #222222;
+	margin: 0px 0px 18px;
+	font-weight:500;
+}
+.service-item p{
+	font-size: 14px ;
+	font-family:"Roboto", sans-serif;
+	color: #777777;
+	margin: 0px 0px 16px;
+	line-height: 25px;
+}
+.service-item{
+	margin-right:15px ;
+	margin-left:15px ;
+}
+.service-item:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition: all 300ms linear 0s;
+}
+/* Services Section Css  */
+
+/* Builder Area Css Starts  */
+.builder img{
+	height:280px;
+}
+.image-wrapper{
+	position:relative;
+	text-align: center;
+}
+
+.image-wrapper > .hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: #ffc107;
+	color: #ffffff;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity:0;
+	transition:opacity 0.30s ;
+}
+.image-wrapper h3{
+	font-size:20px;
+	font-family: "Oswald", sans-serif;
+	color: #222222;
+	font-weight: 600;
+}
+.image-wrapper p{
+	max-width: 470px;
+	margin: auto;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: :"Roboto", sans-serif;
+	color: #222222;
+	font-weight: 400;
+}
+.image-wrapper > .hover:hover{
+	opacity:.9;
+	cursor: pointer;
+}
+.img-wrapper > img,
+.img-wrapper > .hover {
+  transition: 200ms ease-in-out;
+}
+
+.builder-content{
+	margin-bottom:50px;
+}
+
+/* Builder Area Css ends  */
+
+/* Team Area Css Starts  */
+.team{
+	padding-top:120px;
+	padding-bottom:120px;
+}
+.team-content{
+	max-width:720px;
+	margin: 0px auto 75px;
+}
+.member-info img{
+	height:300px;
+	width:263px;
+}
+.member-info h3{
+	font-size: 18px;
+	font-family: "Oswald", sans-serif;
+	color: #222222;
+	margin: 35px 0px 5px;
+}
+.member-info p{
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: #777777;
+}
+.member-info{
+	position: relative;
+}
+.member-info img{
+	display:block;
+}
+.member-info > .hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 100%;
+	height:100%;*/
+	background: #ffc107;
+	color: #ffffff;
+/*	display:flex;*/
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity:0;
+	transition:opacity 0.30s;
+	height:300px;
+	width:263px;
+}
+.member-info > .hover:hover{
+	opacity:.9;
+	cursor:pointer;
+}
+.member-info > img,
+.member-info > .hover {
+  transition: 200ms ease-in-out;
+}
+.hover>.fa-brands
+{
+	margin-top: 50%;
+	color:#777777;
+	opacity: 0.5;
+	transition:opacity 0.30s;
+}
+.fa-brands:hover{
+	color: #222222;
+	opacity:1;
+}
+/* Team Area Css Ends  */
+
+/* Counter Area Css Starts  */
+.counter-area{
+	background-color: #fab700;
+}
+.counter-contents{
+	max-width: 1170px;
+	margin: auto;
+	padding-top:115px ;
+	padding-bottom:115px ;
+}
+.counter-content{
+	max-width:20%;
+}
+.counter-content h2{
+	font-size: 48px;
+	font-family: "Oswald", sans-serif;
+	color: #222222;
+	margin: 0px 0px 8px;
+	font-weight: 500;
+}
+.counter-content p{
+	color: #222222;
+}
+/* Counter Area Css Ends  */
+
+/* Feature Area Css Starts  */
+.feature{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+.feature-boxes{
+	margin-top: 40px;
+}
+.feature-box{
+	height:200px;
+	width:360px;
+	border:1px solid #d1d1e0;
+	border-radius: 10px;
+	margin:0px 0px 30px;
+	padding:40px 60px 40px 40px;
+}
+.feature-box:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition: all 300ms linear 0s;
+	border: 1px solid #eeeeee;
+}
+.feature-box h4{
+	font-size: 18px;
+	font-family: "Oswald", sans-serif;
+	color: #222222;
+	margin: 0px 0px 20px;
+}
+.feature-box h4:hover{
+	color:#ffc107;
+	transition:0.4s;
+	cursor: pointer;
+}
+.feature-box i{
+	font-size: 25px;
+	margin-right: 25px;
+}
+/* Feature Area Css Ends  */
+
+/* Testimonial Css Starts  */
+.testimonials{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: #f9f9ff;
+}
+.testimonial-item{
+	border-radius: 10px;
+	height: 223px;
+	width:555px;
+	padding: 40px;
+	border:1px solid #d1d1e0;
+	margin-right: 20px;
+}
+.testimonial-item p{
+	width: 100%;
+}
+.testimonial-item img{
+	height:80px;
+	width: 80px;
+}
+.testimonial-item p{
+	font-size:14px;
+	font-family: "Roboto", sans-serif;
+	color: #777777;
+	margin-bottom: 20px;
+}
+.testimonial-item h4{
+	font-size: 20px;
+	font-family: "Oswald",sans-serif;
+	margin-bottom: 8px;
+}
+.testimonial-item h5{
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: #777777;
+}
+.testimonial-item:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition:.5s;
+	background-color:#ffffff;
+	cursor: pointer;
+}
+.testimonial-item h4:hover{
+	color: #ffc107;
+	transition: 0.5s;
+}
+/* Testimonial Css Ends  */
+
+
+/* Client Logo Css Starts  */
+.client-logo{
+	padding-top:120px ;
+	padding-bottom:120px ;
+}
+img.w-20.brand-icon {
+    padding-right: 165px;
+}
+.carousel-indicators{
+	display:none;
+}
+/* Client Logo Css Ends  */
+
+
+/* Footer Css Starts  */
+.footer{
+	padding-top:120px;
+	padding-bottom:120px;
+	background-color: #222222;
+}
+.footer h4{
+	font-size: 20px;
+	font-family: "Oswald", sans-serif;
+	color: #ffffff;
+	margin-bottom: 28px;
+}
+.footer p{
+	font-size: 14px;
+	font-family:"Roboto", sans-serif;
+	color: #777777;
+}
+.footer h3{
+	font-size: 24px;
+	font-family: "Roboto", sans-serif;
+	color: #fab700;
+	margin-bottom:10px;
+}
+.footer .tag{
+	padding-top: 100px;
+}
+/* Footer Css Ends  */
